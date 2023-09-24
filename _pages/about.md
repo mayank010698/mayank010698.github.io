@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: MSCS, UIUC'24
 
 profile:
   align: right
@@ -14,13 +14,14 @@ profile:
     <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I am a master's in Computer Science student at the [University of Illinois at Urbana Champaign](https://grad.illinois.edu/). I am advised by  [Dr. Arindam Banerjee](https://arindam.cs.illinois.edu/). Currently, I am working on tackling distribution shifts in ML models.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before joining UIUC, I was a research assistant with [Prof. Jonathan Scarlett](https://www.comp.nus.edu.sg/~scarlett/) at NUS. Previously, I spent a wonderful year working in the AI R&D Lab at Samsung Research and Development Headquarters in South Korea. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I completed my undergrad from IIT Kanpur in Electrical Engineering. I worked with [Dr. Himanshu Tyagi](https://ece.iisc.ac.in/~htyagi/) at IISC, [Dr.Vipul Arora](https://vipular.github.io/) at IITK, and Dr. Minseok Kwon at Samsung Electronics during my undergraduate years.
+
