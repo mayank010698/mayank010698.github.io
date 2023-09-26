@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated with major  in Electrical Engineering and minor in Machine Learning from IIT Kanpur.
+Graduated with major in Electrical Engineering and minor in Machine Learning from [IIT Kanpur](https://www.iitk.ac.in/).
