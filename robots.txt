@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mayank010698.github.io/sitemap.xml
+Sitemap: https://mayank010698.github.io/blog//sitemap.xml
