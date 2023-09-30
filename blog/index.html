@@ -50,7 +50,7 @@ pagination:
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {%- if post.external_source %}
-        <i class="fas fa-file"></i><a  href="{{ post.external_source }}"> Report</a>
+        <i class="fas fa-file"></i><a  href="{{ post.external_source | relative_url }}"> Report</a>
         {%- endif %}
         
         {%- if post.code %}
