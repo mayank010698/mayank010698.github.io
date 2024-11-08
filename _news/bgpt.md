@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper on Dimension-free federated learning accepted in [BGPT Workshop, ICLR'4](https://sites.google.com/view/bgpt-iclr24).
+Paper on [Sketching for Distributed Learning](https://neurips.cc/virtual/2024/poster/96942) accepted in [BGPT Workshop, ICLR'24](https://sites.google.com/view/bgpt-iclr24).
