@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper on [Sketching for Distributed Learning](https://neurips.cc/virtual/2024/poster/96942) accepted at  [NeuRIPS 2024](https://neurips.cc/)!.
+Paper on [Sketching for Distributed Learning](https://neurips.cc/virtual/2024/poster/96942) accepted t  [NeuRIPS 2024](https://neurips.cc/)!.
