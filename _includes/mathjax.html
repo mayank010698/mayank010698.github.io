@@ -1,0 +1,24 @@
+<!-- _includes/mathjax.html -->
+<script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        macros: {
+          R: "\\mathbb{R}",
+          E: "\\mathbb{E}",
+          P: "\\mathbb{P}",
+          norm: ["\\lVert #1 \\rVert", 1],
+          inner: ["\\langle #1, #2 \\rangle", 2],
+          grad: "\\nabla",
+          d: "\\,\\mathrm{d}"
+        }
+      },
+      svg: { fontCache: 'global' }
+    };
+    </script>
+    <script defer id="MathJax-script"
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    
