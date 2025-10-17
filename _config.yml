@@ -176,6 +176,20 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+
+  notes:
+    output: true
+    permalink: /notes/:path/
+    defaults:
+      - scope:
+          path: ""
+          type: notes
+        values:
+          layout: note
+          mathjax: true
 
 announcements:
   enabled: true
@@ -196,6 +210,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+  parse_block_html: true
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:

@@ -1,12 +1,68 @@
   {%- if site.enable_math -%}
   <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    tags: 'ams',
+    // add TeX “packages” (extensions) MathJax should load
+    packages: {'[+]': ['ams','bm','boldsymbol','color','bbox']},
+    macros: {
+      // colors
+      mr: ['{\\textcolor{red}{#1}}', 1],
+      mb: ['{\\textcolor{blue}{#1}}', 1],
+      mbl: ['{\\textcolor{black}{#1}}', 1],
+      mv: ['{\\textcolor{violet}{#1}}', 1],
+      mbv: ['{\\textcolor{BlueViolet}{#1}}', 1],
+      mg: ['{\\textcolor{gray}{#1}}', 1],
+
+      // begin/end equation shorthands
+      beq: '{\\begin{equation}}',
+      eeq: '{\\end{equation}}',
+
+      // blackboard shortcuts
+      B: '{\\mathbb{B}}', I: '{\\mathbb{I}}', N: '{\\mathbb{N}}',
+      R: '{\\mathbb{R}}', C: '{\\mathbb{C}}', E: '{\\mathbb{E}}',
+      X: '{\\mathbb{X}}', Y: '{\\mathbb{Y}}', P: '{\\mathbb{P}}',
+      // If you used \mathbbm in TeX, emulate it:
+      mathbbm: ['{\\mathbb{#1}}', 1],  // note: 𝟙 may not be available; see note below
+      '1': '{\\mathbf{1}}',           // \1 -> bold 1 (stand-in for bb-1)
+      '0': '{\\mathbf{0}}',
+
+      // bold vectors/matrices (avoid single-letter redefs if possible)
+      bd: '{\\boldsymbol}',
+      mf: '{\\mathbf}',
+
+      // norms, inner products, derivatives
+      norm: ['{\\lVert #1 \\rVert}', 1],
+      inner: ['{\\langle #1, #2 \\rangle}', 2],
+      del:   ['{\\frac{\\partial #1}{\\partial #2}}', 2],
+
+      // common bold greek/letters (examples)
+      llambda: '{\\boldsymbol{\\lambda}}',
+      Th: '{\\boldsymbol{\\theta}}',
+      ddelta: '{\\boldsymbol{\\Delta}}',
+      SSigma: '{\\boldsymbol{\\Sigma}}',
+
+      // measure/integration niceties
+      di: '{\\,\\mathrm{d}}',
+      abs: ['{\\left|#1\\right|}', 1],
+
+      // operators (you can also rely on ams \DeclareMathOperator)
+      argmax: '{\\mathop{\\mathrm{argmax}}}',
+      argmin: '{\\mathop{\\mathrm{argmin}}}',
+      spec:   '{\\mathop{\\mathrm{Spec}}}',
+      frob:   '{\\mathop{\\mathrm{Frob}}}'
+    }
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script defer id="MathJax-script"
+        src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-chtml.js"></script>
+
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   {%- endif %}
+

@@ -1,0 +1,53 @@
+<div class="publications">
+{% if site.publications!=blank %}
+  {%- assign pubs_by_year = site.publications | group_by_exp: "item", "item.year" | sort: "name" | reverse -%}
+
+  {% for year_group in pubs_by_year %}
+    <h4>{{ year_group.name }}</h4>
+    <ul class="pub-list">
+      {% for paper in year_group.items %}
+        <li style="margin-bottom: 1em;">
+          <!-- Title -->
+          <div class="pub-title">
+            {% if paper.url %}
+              <a href="{{ paper.url | relative_url }}" target="_blank"><strong>{{ paper.title }}</strong></a>
+            {% else %}
+              <strong>{{ paper.title }}</strong>
+            {% endif %}
+          </div>
+
+          <!-- Authors and venue -->
+          <div class="pub-authors">
+            {{ paper.authors }}
+          </div>
+          <div class="pub-venue">
+            <em>{{ paper.venue }}</em>
+          </div>
+
+          <!-- Optional notes (e.g., "Used in production", "Best Paper") -->
+          {% if paper.note %}
+            <div class="pub-note" style="color: red;">{{ paper.note }}</div>
+          {% endif %}
+
+          <!-- TL;DR dropdown -->
+          {% if paper.tldr %}
+            <details class="pub-tldr" style="margin-top: 4px;">
+              <summary>TL;DR</summary>
+              <p style="margin-top: 4px;">{{ paper.tldr }}</p>
+            </details>
+          {% endif %}
+
+          <!-- Links -->
+          <div class="pub-links" style="margin-top: 4px;">
+            {% if paper.paper_link %}<a href="{{ paper.paper_link }}" target="_blank">[Paper]</a>{% endif %}
+            {% if paper.code_link %}<a href="{{ paper.code_link }}" target="_blank">[Code]</a>{% endif %}
+            {% if paper.project_link %}<a href="{{ paper.project_link }}" target="_blank">[Project]</a>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% else %}
+  <p>No publications yet...{{ site.publications | size }}</p>
+{% endif %}
+</div>
