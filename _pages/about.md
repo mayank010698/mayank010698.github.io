@@ -22,6 +22,7 @@ publications: true
 I am a second-year Ph.D. student in **Computer Science** at the [University of Illinois at Urbana–Champaign](https://grad.illinois.edu/), advised by [Prof. Arindam Banerjee](https://arindam.cs.illinois.edu/).
 
 
+
 **Research Interests**
 
 My research focuses on **generative modeling**, with emphasis on both theory and applications, particularly in **controlled generation** and **data assimilation**. I am also broadly interested in **Reinforcement Learning** and **Federated Learning**.
@@ -36,3 +37,4 @@ My research focuses on **generative modeling**, with emphasis on both theory and
 
 Checkout my [notes](/notes).
 
+Click here for [CV](/Mayank_academic_CV__Copy_%20(1).pdf)
