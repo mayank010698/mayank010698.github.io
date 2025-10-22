@@ -5,5 +5,5 @@ venue: "GenAI Workshop on Advanced Techniques in Auto-prompt Tuning, Amazon Mach
 year: 2025
 url: 
 paper_link: 
-tldr: We adapt the INSTINCT bandit-based prompt optimization framework for theft detection using VLMs.Leveraging Mistral as the prompt generator and Neural UCB for surrogate modeling, we perform zeroth-order optimization, achieving a 3% AUC improvement."
+tldr: Adapted the INSTINCT bandit-based prompt optimization framework for theft detection using VLMs, employing Mistral for prompt generation and Neural UCB for surrogate optimization, yielding a 3% AUC gain.
 ---

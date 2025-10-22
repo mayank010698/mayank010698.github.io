@@ -35,6 +35,6 @@ My research focuses on **generative modeling**, with emphasis on both theory and
 - **Samsung Electronics, Suwon** – Machine Learning Engineer, Samung Bixby(2020–2021)  
 - **IIT Kanpur, India** – B.Tech, Electrical Engineering (2016–2020)
 
-Checkout my [notes](/notes).
+Checkout my Incomplete [notes](/notes).
 
-Click here for [CV](/Mayank_academic_CV__Copy_%20(1).pdf)
+Click here for [CV](/cv.pdf).
