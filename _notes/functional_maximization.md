@@ -1,3 +1,4 @@
+---
 layout: page
 title: Misc
 date: 2025-10-16

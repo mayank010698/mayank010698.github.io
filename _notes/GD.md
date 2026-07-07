@@ -1,3 +1,4 @@
+---
 layout: page
 title: Gradient Descent
 date: 2026-07-07

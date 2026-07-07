@@ -1,3 +1,4 @@
+---
 layout: page
 title: Schrodinger Bridge
 date: 2025-10-16
